@@ -24,3 +24,12 @@
 
 - Operadores Matemáticos
 - Ordem de precedência
+
+## Aula 8 - 9
+
+- Modulos e bibliotecas
+- Random
+
+## Aula 10
+
+- Colecoes
