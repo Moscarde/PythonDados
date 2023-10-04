@@ -48,3 +48,30 @@
     - Tamanho da lista 'len(lista)'
     - Extraindo valores 'max() min() sum()'
 
+## Aula 12
+
+- Sets
+    - .set()
+    - .add()
+    - .update([1, 2, 3])
+    - .discard(elem)
+- Operações entre sets
+    - .union()
+    - .intersection()
+    - .difference()
+
+## Aula 13
+
+- Dicionários {chave:valor, chave:valor} dict({})
+- Adicionar itens 
+    - .update({})
+    -['chave'] = valor
+- Remover itens
+    - .pop('chave')
+
+## Aula 14
+
+- Regex
+- Manipulação de strings
+- Filtro por Regex
+- Validacao com regex
