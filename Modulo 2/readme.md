@@ -99,3 +99,13 @@
     - for indice, item in list:
 
 - While
+
+## Aula 19 - 20
+
+- Funçoes
+- Retornos
+- Função Lambda
+- Map
+    - Aplica uma funcao a todos os itens da lista e retorna
+- Lambda como argumento no map
+    - list(map(lambda x: x * 0.2, lista))
