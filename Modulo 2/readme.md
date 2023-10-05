@@ -73,5 +73,29 @@
 
 - Regex
 - Manipulação de strings
+    - .startswith()
+    - .endswith()
 - Filtro por Regex
+    - import re
+    - expressao = re.compile(padrao)
+    - expressao.findall(texto)
 - Validacao com regex
+    - re.fullmatch(expressao, texto)
+
+## Aula 15 - 16
+
+- Condicionais
+- if, elif, else
+- and or
+
+## Aula 17 - 18
+
+- Loops
+- loop com lista
+    - for i in list:
+- loop com range
+    - for i in range(0, 3):
+- loop com enumerate - lista
+    - for indice, item in list:
+
+- While
