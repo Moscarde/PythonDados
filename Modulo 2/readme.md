@@ -109,3 +109,32 @@
     - Aplica uma funcao a todos os itens da lista e retorna
 - Lambda como argumento no map
     - list(map(lambda x: x * 0.2, lista))
+
+## Aula 21
+
+- Try
+- Except
+- Else
+- Finaly
+
+## Aula 22
+
+- List Comprehensions
+- Filter
+    - Passa um lambda com condicional
+    - Caso retorne True, é adicionado a lista
+- Map
+    - Passa uma ação para ser executado em todos
+
+## Aula 23
+
+- datetime
+    - timedelta
+    - date
+    - datetime
+- conversão str ~> date
+    - datetime.strptime(str, 'formatacao')
+- timedelta
+- relativedelta
+- timezones
+    - pytz
