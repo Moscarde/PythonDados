@@ -1,37 +1,30 @@
 # Resumo Módulo 2
 
-## Aula 2
-
+## Aula 1 - 2
 - Introdução a variaveis
 - Declaração, exibição e cálculos
 
 ## Aula 3
-
 - Comentários
 
 ## Aula 4
-
 - Objetos e seus tipos
 - Conversões
 - String variável
 
 ## Aula 5
-
 - Inputs
 - Calculos com inputs
 
 ## Aula 6 - 7
-
 - Operadores Matemáticos
 - Ordem de precedência
 
 ## Aula 8 - 9
-
 - Modulos e bibliotecas
 - Random
 
 ## Aula 10 - 11
-
 - Colecoes
 - Tuplas
 - Listas
@@ -49,7 +42,6 @@
     - Extraindo valores 'max() min() sum()'
 
 ## Aula 12
-
 - Sets
     - .set()
     - .add()
@@ -61,7 +53,6 @@
     - .difference()
 
 ## Aula 13
-
 - Dicionários {chave:valor, chave:valor} dict({})
 - Adicionar itens 
     - .update({})
@@ -70,7 +61,6 @@
     - .pop('chave')
 
 ## Aula 14
-
 - Regex
 - Manipulação de strings
     - .startswith()
@@ -83,13 +73,11 @@
     - re.fullmatch(expressao, texto)
 
 ## Aula 15 - 16
-
 - Condicionais
 - if, elif, else
 - and or
 
 ## Aula 17 - 18
-
 - Loops
 - loop com lista
     - for i in list:
@@ -101,7 +89,6 @@
 - While
 
 ## Aula 19 - 20
-
 - Funçoes
 - Retornos
 - Função Lambda
@@ -111,14 +98,12 @@
     - list(map(lambda x: x * 0.2, lista))
 
 ## Aula 21
-
 - Try
 - Except
 - Else
 - Finaly
 
 ## Aula 22
-
 - List Comprehensions
 - Filter
     - Passa um lambda com condicional
@@ -127,7 +112,6 @@
     - Passa uma ação para ser executado em todos
 
 ## Aula 23
-
 - datetime
     - timedelta
     - date
