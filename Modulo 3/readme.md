@@ -21,3 +21,15 @@
         - numero aleatorio podendo ser negativo(colocar no campo lower)
 
     
+## Aula 3
+- Metodos x Atributos
+    - obj.atributo
+    - obj.metodo()
+<!-- https://numpy.org/doc/stable/reference/generated/numpy.ndarray.html -->
+
+## Aula 4
+- Selecionando posiçoes
+    -array[0]
+    -array[-1]
+- Filtrando os dados
+    -array[array > 19]
