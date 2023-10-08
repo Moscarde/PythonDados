@@ -34,7 +34,7 @@
 - Filtrando os dados
     -array[array > 19]
 
-## [Aula 5](Aula 5.ipynb)
+## Aula 5
 - Concatenando arrays
     - np.concatenate([array1, array2, ...])
 - Splitando arrays
@@ -51,3 +51,20 @@
 - Ordenação
     - np.sort(array) #crescente
     - -np.sort(-array) #decrescente
+
+## Aula 6
+- Operações com vetores
+- print(array1 + array2) #[5 6 7 8]
+- Extraindo valores
+    - vetor.sum()
+    - vetor.max()
+    - vetor.min()
+    - np.abs(vetor)
+- Extraindo estatísticas descritivas
+    - np.mean(vetor)
+    - np.median(vetor)
+    - np.std(vetor)
+    - np.var(vetor)
+- Matriz de correlação
+    - np.corrcoef((vetor1, vetor2, vetor3, ...))
+    
