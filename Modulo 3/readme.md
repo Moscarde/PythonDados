@@ -1,4 +1,4 @@
-# Resumo Módulo 3
+# Resumo Módulo 3 - NumPy
 
 ## Aula 1 - 2
 - NumPy
