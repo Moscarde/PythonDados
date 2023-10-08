@@ -33,3 +33,21 @@
     -array[-1]
 - Filtrando os dados
     -array[array > 19]
+
+## [Aula 5](Aula 5.ipynb)
+- Concatenando arrays
+    - np.concatenate([array1, array2, ...])
+- Splitando arrays
+    - array1, array2 = np.split(array_maior, [pos])
+- Inserindo dados em arrays
+    - np.append(array, elem)
+    - np.insert(array, pos, elem)
+- Deletando elem
+    - np.delete(array, pos)
+- Reshape
+    - np.reshape(3, 3) #3x3
+- Operações dentro de arrays
+    - array[condição] = elem
+- Ordenação
+    - np.sort(array) #crescente
+    - -np.sort(-array) #decrescente
