@@ -56,7 +56,7 @@
 - Dicionários {chave:valor, chave:valor} dict({})
 - Adicionar itens 
     - .update({})
-    -['chave'] = valor
+    - ['chave'] = valor
 - Remover itens
     - .pop('chave')
 

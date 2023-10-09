@@ -19,6 +19,9 @@
         - Numero aleat inteiro
     - np.random.uniform(low = , high = , size =)
         - numero aleatorio podendo ser negativo(colocar no campo lower)
+    -np.random.normal(centro, variacao / volatividade) 0, 0.01
+        - usado para gerar um numero aleatorio com uma variacao / volatividade
+        - usado para gerar cotacoes randomicas com volatividade predefinida
 
     
 ## Aula 3
@@ -63,7 +66,7 @@
 - Extraindo estatísticas descritivas
     - np.mean(vetor)
     - np.median(vetor)
-    - np.std(vetor)
+    - np.std(vetor) #desvio padrao
     - np.var(vetor)
 - Matriz de correlação
     - np.corrcoef((vetor1, vetor2, vetor3, ...))
