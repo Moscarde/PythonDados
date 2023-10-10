@@ -32,3 +32,55 @@
     - Definindo index como datas
     - filtro por index de datas
     - cotacao_weg[cotacao_weg.index > '2000-02-25']
+
+## Aula 4
+- Colunas
+- Trocando nome das colunas
+    - df.columns = ["coluna1", "coluna3", "coluna3"]
+- Filtros por coluna
+    - df.coluna
+    - df['coluna']
+- Filtro por colunas
+    - df[["coluna1", "coluna1"]]
+    - df[lista_colunas]
+- Filtros retornam series com valores e index
+- Boa prática é setar a data como index antes de extrair as colunas
+- Filtros com condicoes
+    - df[df[coluna] > 20]
+    - df[(df[coluna] > 20) & (df[coluna] < 30)]
+    - & e / ou |
+
+## Aula 5
+- loc
+    - df.loc['WEGE']
+        - retorna uma ou mais linhas correspondentes com valores de todas as colunas
+    - df.loc['WEGE', 'preco']
+        - retorna uma ou mais linhas correspondentes com valores de todas as colunas
+    - também pode ser inserido range de datas
+    - df.loc['2014-01-05': '2014-01-07']
+- at
+    - funcionamento similar ao loc
+    - prioriza valores unicos
+    - nao usa range de valores
+- iloc
+    - df.iloc[:3, :]
+        - filtra com indices numericos pela ordem das colunas e linhas
+        - retorna um ou mais itens
+- iat
+    - df.iat[1, 4]
+        - retorna um item unico na posição especifica
+
+- Atualização de dados
+    - loc pode alterar multiplos dados 
+    - at altera valores unicos
+
+## Aula 6
+- operações entre series e dataframes
+    - serie_cotacoes * serie_euro
+- criando nova coluna no df com calculo de outras colunas
+    - df['p_l'] = df['cotacao'] / df['lucro_por_acao']
+- puxando resultados de colunas
+    - sum, mean, std, min, max
+    - cumsum
+
+## Aula 7
