@@ -84,3 +84,14 @@
     - cumsum
 
 ## Aula 7
+- ordenacao
+    - sort_index()
+        - ascending = False
+- axis = 1 ~> muda o eixo do método
+- ordenação por coluna
+    - sort_values(by = '' ou [''])
+- rank
+    - empresas['ranking_padrao'] = empresas['preco_sobre_lucro'].rank()
+    - (method = 'max' , 'min', 'dense')
+
+## Aula 8
