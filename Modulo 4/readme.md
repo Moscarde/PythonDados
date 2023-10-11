@@ -95,3 +95,28 @@
     - (method = 'max' , 'min', 'dense')
 
 ## Aula 8
+- lendo arquivos excel - xlsx
+- retorna o diretorio atual
+    - os.getcwd()
+- muda o diretorio de trabalho para o argumentado
+    - os.chdir()
+- lendo arquivos excel
+    - pd.read_excel()
+- parametros para tratamento / leitura
+    - skiprows= 6 ~~> pula uma quantidade de linhas 
+    - index_col= 'Data' ~~> usa uma coluna como index
+    - na_values='nd' ~~> define o valor para Na's
+    - decimal = ',' ~~> define a seraracao decimal
+- removendo valores ausentes
+    - df.dropna()
+- exportando dados para xlsx
+    -df.to_excel('')
+
+## Aula 9
+- lendo arquivos csv
+    - pd.read_csv()
+- parametros
+    - sep = ';' ~~> define o separador
+    - encoding = 'ISO-8859-1' ~~> define o encoding
+- exportando dados para csv
+    - df.to_csv('', sep = ';')
