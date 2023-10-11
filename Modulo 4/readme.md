@@ -120,3 +120,59 @@
     - encoding = 'ISO-8859-1' ~~> define o encoding
 - exportando dados para csv
     - df.to_csv('', sep = ';')
+
+## Aula 10
+- teoria
+- biblioteca pandas data reader
+- dados mercado financeiro
+    - AlphaVantage - dados intraday
+    - The Investors Exchange - dados de ações, ETFs e fundos
+    - Moscow, Quandl, Tiingo, Yahoo Finance - dados de ações, ETFs e fundos
+- dados especificos de financas
+    - Fama-French Data - Dados sobre factor investing
+    - NASDAQ - Todos os simbolos negociados
+    - Naver Finance - dados mercado coreano
+    - Stooq.com - Dados de indices
+- dados economia
+    - Federal Reserve Economic Data (FRED) - Dados da economia americana
+    - Bank of Canada - ... canadense
+    - Econdb - Economia mundial
+    - Organisation for Economic Co-operation and Development (OECD) - Indicadores economicos
+    - World Bank - Indicadores economicos
+- dados gerais
+    - Enigma - Dados genericos como todos os recalls de comida dos eua
+    - Eurostat - Dados genericos da ue
+    - Thrift Saving Plan(TSP) - dados do fundo de pensao eua
+
+## Aula 11
+- yahoofince / yfinance as yf
+- buscar dados de acao
+    - yf.download(tickers = acao ou [])
+- parametros
+    - start= '2010-01-01' ~~> inicio
+    - end= datetime.now() ~~> fim
+    - interval = '1wk' ~~> intervalo
+- primeiros resultados
+    - df.head(10)
+
+## Aula 12
+- puxando dados do Fred com o pandas_datareader
+    - pdr.get_data_fred('codigo', inicio, final)
+- plotagem de graficos
+    - df.plot()
+
+## Aula 13
+- puxando dados do world database
+    - from pandas_datareader import wb
+- puxando indicadores direto da biblioteca
+    - wb.get_indicators()
+    - wb.search('gdp.*capita.*const')
+- wb.download()
+    - indicator='NY.GDP.PCAP.KD',
+    - country = ['MX', 'BRA'], ~~> codigo paises ISO 3166
+    - start=2000,
+    - end= 2023
+- groupby('col')
+- .droplevel(level= 0)
+
+
