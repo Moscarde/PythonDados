@@ -192,3 +192,25 @@
     - method='ffill' ~~> preenche com o dado anterior
     - limit= 2 ~~> limite de sequencia de preenchimento
 
+## Aula 17
+- Filtrar valores unicos de uma coluna
+    - Serie.unique() ~> retorna um array com valores unicos
+    - usado para criação de loops
+    - porem groupby atende melhor 
+- removendo itens duplicados
+    - .drop_duplicates(subset='coluna')
+    - remove na ordem de index
+    - caso precise filtrar a remoção, deve reordenar o index antes
+    
+## Aula 18
+- Mudando o tipo de dado de uma coluna
+    - coluna.astype(ind / str)
+    - pd.to_datetime(coluna['data'], formnat= '%d/%m/%Y') ~~> str para data
+- Trocando valores
+    - coluna.replace(incial, final) ~~> inicial pode ser []
+    - coluna.str.replace() ~~> para substituir valores fracionados de strings precisa usar o metodo str
+
+## Aula 19
+- Operacoes com valores de colunas
+    - map(lambda)
+    
