@@ -175,4 +175,20 @@
 - groupby('col')
 - .droplevel(level= 0)
 
+## Aula 14
+- puxando dados de factor investing
+
+## Aula 15 Python + MySQL
+- Rever aula
+
+## Aula 16
+- Tratando dados na
+    - df.dropna()
+- Parametros
+    - how= 'all' ~~> remove apenas linhas em que todos os valores são na
+    - subset=['empresa', 'cotacao'] ~~> remove somente as linhas as colunas predefinidas são NA
+- Preenchendo dados na
+    - df.fillna(0)
+    - method='ffill' ~~> preenche com o dado anterior
+    - limit= 2 ~~> limite de sequencia de preenchimento
 
