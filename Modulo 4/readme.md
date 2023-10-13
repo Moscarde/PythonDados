@@ -214,3 +214,49 @@
 - Operacoes com valores de colunas
     - map(lambda)
     
+## Aula 20
+- Fatiando / seccionando dados
+    - pd.cut(divisoes, serie)
+    - pd.value_counts(valores_fatiados) ~~> conta quantos valores se repetem em cada divisao
+    - pd.get_dummies(valores_fatiados) ~~> transformar a amostra em variaveis dummys
+        - dtype= int
+
+## Aula 21
+- Meltando tabelas
+    - Transformando tabelas largas em tabelas compridas
+    - Processo para usar o groupby
+- Formula
+    - reset_index() ~> Garantindo que data seja uma coluna, para salvar os valores
+    - pd.melt(df, param)
+    ou
+    - df.melt(param)
+        - id_vars = 'Date'
+        - var_name = 'Empresa'
+        - value_name = 'Price'
+- Usando o groupby ou filtrando busca
+    - df.groupby('empresa')['price'].mean()
+
+    - df[df['empresa'] == 'WEGE3.SA]
+- Revertendo com pivot_table
+    - pd.pivot_table(df, param)
+    ou
+    - df.pivot_table(param)
+        - index = 'Date'
+        - collumns = 'Empresa'
+    - df.droplevel(level = 0, axis = 1)
+
+## Aula 22
+- Juntando DFs
+- Concat, Merge, Join
+- Concat junta dfs sem levar em consideração nenhuma chave ou coluna, apenas agrupa / empilha
+- Merge precisa selecionar por qual chave vai combinar valores e a forma de agrupar
+- Join - Entra dados de uma df em outro atual, baseado ou nao no index
+- pd.concat([dfs])
+    - ignore_index= True #ignora o index, mais usado quando valores nao sao baseado em datas e os index são mais aleatorios
+- pd.merge(df1, df2, how, left_on, right_on)
+    - how = left, right, inner, outer
+- df1.join(df2)
+
+- deletando uma coluna de um df
+    - df.drop('col', axis=1)
+
