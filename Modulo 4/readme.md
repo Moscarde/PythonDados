@@ -260,3 +260,11 @@
 - deletando uma coluna de um df
     - df.drop('col', axis=1)
 
+## Aula 23
+- reestruturando um df com resample
+- usado para filtrar ou aplicar funções em determinadas frequencias
+    - df.resample(freq)
+    - W, M, Y, S, min, ...
+
+    
+
