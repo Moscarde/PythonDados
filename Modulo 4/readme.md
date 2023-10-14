@@ -263,8 +263,19 @@
 ## Aula 23
 - reestruturando um df com resample
 - usado para filtrar ou aplicar funções em determinadas frequencias
-    - df.resample(freq)
+    - df.resample(freq) .last()
     - W, M, Y, S, min, ...
 
-    
+## Aula 24
+- calculo retorno diario, retorno por periodo definido em cada dia
+- .pct_change() retorno diario
+- .pct_change(periods= ) int ~> n dias
+- retorno 36m ~> 252d * 3anos
+- dados_36m = dados_mercado.pct_change(periods=dias).dropna()
 
+## Aula 25
+- df.rolling(dias)
+- cria uma janela deslisante, usado para pegar a media e criar uma média móvel com base na média desses valores no intervalo
+- comparando com o resample, utiliza um método para todos os valores, enquanto o resample pega apenas as ponta
+- np.where(condicional, case True, case False)
+    - np.where(dados_acao['Close'] > dados_acao['MM250D'], "Compra", "Venda")
