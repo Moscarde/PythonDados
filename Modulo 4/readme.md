@@ -279,3 +279,37 @@
 - comparando com o resample, utiliza um método para todos os valores, enquanto o resample pega apenas as ponta
 - np.where(condicional, case True, case False)
     - np.where(dados_acao['Close'] > dados_acao['MM250D'], "Compra", "Venda")
+
+## Aula 26
+- correlacao e covariança
+- ⚠ .corr deve ser usado entre dataframes ou colunas de dfs, sendo feito entre series nao da muito certo
+- correlacao de retornos diarios
+    - #supondo um df com multiplas colunas
+    - .pct_change().corr()
+- correlacao de retornos anuais
+    - df.pct_change().dropna().rolling(252).corr(?:outro df)
+- removendo uma coluna com drop
+    - df.drop('coluna', axis = 1)
+- .cov ~> covalencia
+
+## Aula 27
+- groupby
+- Separar, aplicar, combinar
+- calcular lucro por mes por ano
+- anual
+- df.groupby('empresa').metodos
+    - sum
+    - mean
+    - last
+    - tail
+    - cumprod
+- df. groupby('ano')['rent_modelo'].mean()
+- df.groupby(['ano', 'mes'])['Volume em reais'].mean()
+
+## Aula 28
+- funcao com retorno de um dicionario chaves e valores processados
+- df.aply(funcao) ~> usado em dataframes
+    - retorna um df meltado com a estrutura do dicionario e o agrupamento passado
+- Series.transform(lambda)
+    - aplica uma funcao lambda em todos os elementos da lista
+    - retorna uma lista
