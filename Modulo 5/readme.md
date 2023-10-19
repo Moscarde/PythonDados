@@ -109,3 +109,38 @@
 - buscando serie ipca e igp-m
 - ax.axhline(y = 0, color = 'black')
 
+## Aula 11 - Histograma, Dispersão, Boxplot
+- formatter
+    - mtick.PercentFormatter(1, decimals = 0)
+- ax.hist(series.values, bins = 120)
+    - bins = <>
+
+- graficos de dispersão
+    - ax.scatter(series1, series2, c = array.like, cmap = 'cool')
+        - plt.colorbar(color)
+    - barra continua, barra_discreta
+
+- ax.boxplot(x = retornos_mensais)
+
+## Aula 12 - Seaborn
+- ++ Outra forma de plotar graficos em grid
+- import seaborn as sns
+- Linha
+    - sns.lineplot(data=)
+- Histograma
+    - sns.histplot(data= , bins 150)
+- Regressao linear
+    - sns.regplot(x=, y= , line_kws={"color": ""})
+- Boxplot
+    - sns.boxplot()
+
+## Aula 13 - Annotations
+- Insere anotações com flechas em determinadas datas
+    - ax.annotate(
+        Texto,
+        xy= (data, cotacoes.asof(data) + 2800), #posicao seta
+        xytext = (data, cotacoes.asof(data) + 9000), #posicao texto
+        arrowprops = dict(facecolor = 'black', headwidth = 4, width = 2, headlength = 4),
+        horizontalalignment = 'right', verticalalignment = 'top')
+
+## Aula 14 - Animações
