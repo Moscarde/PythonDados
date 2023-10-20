@@ -144,3 +144,23 @@
         horizontalalignment = 'right', verticalalignment = 'top')
 
 ## Aula 14 - Animações
+- Funcao animate(i)
+    - data fracionada + plot
+        data = janela_cor_weg.iloc[:int(i+1)]
+        weg = ax.plot(data.index, data.values, color = '#00FFFF',   label = "WEGE3")
+    
+- ani = FuncAnimation(fig, animate, frames = range(0, len(cotacoes)), interval= 10, repeat = False)
+
+## Aula 15 - Seaborn - Mapa de calor
+- para exemplificar foi calculado o valor anualizado de retornos janelas moveis de 1 ano para periodos de 1, 3, 5, 10 anos
+- foi criado um df com as tabelas em periodos e linhas em acoes
+- ax = sns.heatmap(tabela_janelas_moveis, annot=True, cmap= 'Blues', fmt= 'g')
+- plt.yticks(rotation = 0)
+- colocar % no texto
+    - for t in ax.texts:
+        -t.set_text(t.get_text() + '%')
+
+## Aula 16 - Mapa de calor mensal com quantstats qs
+- cotacoes.resample('M').last().pct_change().dropna()
+- qs.extend_pandas()
+- df.plot_monthly_heatmap()

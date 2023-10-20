@@ -306,10 +306,11 @@
 - df. groupby('ano')['rent_modelo'].mean()
 - df.groupby(['ano', 'mes'])['Volume em reais'].mean()
 
-## Aula 28
+## Aula 28 - DrawDown
 - funcao com retorno de um dicionario chaves e valores processados
 - df.aply(funcao) ~> usado em dataframes
     - retorna um df meltado com a estrutura do dicionario e o agrupamento passado
 - Series.transform(lambda)
     - aplica uma funcao lambda em todos os elementos da lista
     - retorna uma lista
+- cummax()
