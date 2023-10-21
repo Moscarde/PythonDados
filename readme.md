@@ -1,3 +1,3 @@
 # Python Dados
 
-Este repositorio conta com atividades e resumos sobre meus estudos sobre dados e analises em python
+Este repositorio conta com atividades, resumos e experimentações desenvolvidas em meus estudos sobre python voltados a dados
